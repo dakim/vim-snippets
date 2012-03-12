@@ -1,0 +1,58 @@
+snippet gdate
+	<g:datePicker name="${1:name}" value="${2:date}" 
+		precision="${3:day}" 
+		relativeYears="${4:range}"/>${5}
+
+snippet geach
+	<g:each in="${1:list}" var="${2:varName}">
+	   ${3}
+	</g:each>
+
+snippet gelse
+	<g:else>
+		${1}
+	</g:else>
+
+snippet gelseif
+	<g:esleif test="${1:condition}" >
+		${2}
+	</g:elseif>
+
+snippet gfrom
+	<g:form action="${1:actionName}" method="${2:post}" >
+	   ${3}
+	</g:form>
+
+snippet gherr
+	<g:hasErrors bean="${1:modelName}">
+	   ${2}
+	</g:hasErrors>
+
+snippet gif
+	<g:if test="${1:condition}">
+	   ${2}
+	</g:if>
+
+snippet ginput
+	<g:textField name="${1:fieldName}" value="${2:value}" />
+
+snippet glink
+	<g:link controller="${1:controller}" action="${2:action}" id="${3:id}">
+	   ${4}
+	</g:link>
+
+snippet gremfield
+        <g:remoteField action="${1:action}" update="${2:updateId}"
+                name="${3:name}" value="${4:initialValue}" />${5}
+
+snippet gremsubmit
+	<g:submitToRemote update="${1:updateId}" />
+
+snippet gselect
+	<g:select name="${1:name}" from="${2:list}" value="${3:value}" />${4}
+
+snippet gsubmit
+	<g:submitButton name="${1:name}" value="${2:value}" />${5}
+
+snippet gtemplate
+	<g:render template="${1:templatePath}" model="[${2:modelMap}]" />${3}
